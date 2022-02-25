@@ -1,13 +1,15 @@
-import { defineConfig } from "vite"
 import react from "@vitejs/plugin-react"
 import path from "path"
+import glob from "glob"
 
 // https://vitejs.dev/config/
-export default defineConfig({
+export default {
 	plugins: [react()],
-	resolve: {
-		alias: {
-			"@": path.resolve(__dirname, "./src"),
+	root: path.join(__dirname, "src"),
+	build: {
+		outDir: path.join(__dirname, "dist"),
+		rollupOptions: {
+			input: glob.sync(path.resolve(__dirname, "src", "*.html")),
 		},
 	},
-})
+}
