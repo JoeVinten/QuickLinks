@@ -1,0 +1,50 @@
+* {
+	background-color: #282c34;
+	color: white;
+}
+.App {
+	text-align: center;
+}
+.App-header {
+	font-size: 2em;
+}
+
+.Form-area {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.Form-area input {
+	background-color: white;
+	color: #282c34;
+	padding: 20px 20px;
+	display: block;
+	border-radius: 15px;
+	width: 50%;
+	margin-top: 10px;
+}
+
+.Form-area button {
+	margin-top: 10px;
+	background-color: dodgerblue;
+	padding: 15px 60px;
+	border-radius: 10px;
+	border: none;
+}
+
+label {
+	margin-top: 20px;
+}
+
+.App-link {
+	color: #61dafb;
+}
+
+.Output {
+	font-size: 1.5em;
+}
+
+button {
+	font-size: calc(10px + 2vmin);
+}
